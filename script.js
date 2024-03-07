@@ -1,10 +1,10 @@
-document.getElementById("submit").addEventListener("click", sendToChatGPT);
+document.getElementById('submit').addEventListener('click', sendToChatGPT);
 
 async function sendToChatGPT() {
   let value = document.getElementById('input').value;
 
   let body = {
-    model: "gpt-3.5-turbo",
+    model: 'gpt-3.5-turbo',
     messages: [{ role: "user", content: value }],
     temperature: 0.7,
   };
